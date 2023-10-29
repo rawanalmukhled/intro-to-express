@@ -1,13 +1,14 @@
 const req = require("express/lib/request");
 const res = require("express/lib/response");
 const accounts = require("../../account");
+const Account = require("../../model/Account");
 
 // const getAllProducts = (req, res) => {
 //   res.status(200).json(products);
 // };
 
 const getAllAccounts = (req, res) => {
-  res.status(200).json(accounts);
+  Account.res.status(200).json(accounts);
 };
 
 const addAccount = (req, res) => {
